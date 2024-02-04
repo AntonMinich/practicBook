@@ -16,7 +16,7 @@ let func3Done = false;
 
 function func(){
     if (!funcDone){
-        result2.textContent += input.value*2 + select.value;
+        result2.textContent += input.value*2 + select.value + '²';
         funcDone = true;
     }    
 };
@@ -30,7 +30,7 @@ function func2(){
 
 function func3() {
     if (!funcDone && !func2Done) {
-        result2.textContent += input.value*2 + select.value;
+        result2.textContent += input.value*2 + select.value + '²';
         result1.textContent += input.value*4 + select.value;
         funcDone = true;
         func2Done = true;
@@ -38,7 +38,7 @@ function func3() {
 };
 
 select.addEventListener('change', function(){
-    input.value = '';
+    // input.value = '';
     result1.textContent = 'Периметр -';
     result2.textContent = 'Площадь -';
     funcDone = false;
