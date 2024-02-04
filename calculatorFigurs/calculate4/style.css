@@ -1,0 +1,14 @@
+.line {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.line p {
+    margin-right: 5px;
+}
+
+.line input {
+    height: 20px;
+    width: 30px;
+}
