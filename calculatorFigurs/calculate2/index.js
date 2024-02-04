@@ -16,7 +16,7 @@ btnGenerally.addEventListener('click', getGenerally);
 function getSquare(){
     if(!funcGetSquare) {
         if(width.value > 0 && length.value > 0){
-            resultSquare.textContent += width.value * length.value + select.value;
+            resultSquare.textContent += width.value * length.value + select.value + '²';
             funcGetSquare = true;
             btnGenerally.disabled = true;
         } else {
@@ -43,7 +43,7 @@ function getPerimetr(){
 function getGenerally() {
     if (!funcGetSquare && !funcGetPerimetr) {
         if(width.value > 0 && length.value > 0) {
-            resultSquare.textContent += width.value * length.value + select.value;
+            resultSquare.textContent += width.value * length.value + select.value + '²';
             resultPerimetr.textContent += (2*(width.value + length.value) + select.value);
             funcGetPerimetr = true;
             funcGetSquare = true;
@@ -54,8 +54,6 @@ function getGenerally() {
 }
 
 select.addEventListener('change', function(){
-    width.value = this.ariaPlaceholder;
-    length.value = this.ariaPlaceholder;
     resultSquare.textContent = 'Площадь - ';
     resultPerimetr.textContent = 'Периметр - ';
     funcGetPerimetr = false;
