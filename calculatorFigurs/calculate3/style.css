@@ -1,0 +1,25 @@
+.magnitude {
+    display: flex;
+    align-items: center;
+}
+
+.magnitude p {
+    padding-right: 20px;
+}
+
+.magnitude select {
+    height: 20px;
+}
+
+.value {
+    display: flex;
+    align-items: center;
+}
+
+.value p {
+    padding-right: 20px;
+}
+
+.value input {
+    margin-right: 20px;
+}

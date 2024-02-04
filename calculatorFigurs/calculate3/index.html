@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Калькулятор, который будет находить площадь круга и длину окружности</h2>
+    <div class="magnitude">
+        <p>Выберите известную величину</p>
+        <select id="selectMagnitude">
+            <option value="1" selected>Радиус круга</option>
+            <option value="2">Диаметр круга</option>
+            <option value="3">Длина окружности</option>
+        </select>
+    </div>
+    <div class="value">
+        <p id="meaning">r</p>
+        <input type="number" id="value" value="0">
+        <select id="selectValue">
+            <option value="мм" selected>мм</option>
+            <option value="см">см</option>
+            <option value="м">м</option>
+        </select>
+    </div>
+    <div>
+        <button id="btnSquare">Рассчитать значения</button>
+        <p id="resultSquare">Площадь круга - </p>
+        <p id="resultLength">Длина окружности - </p>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
