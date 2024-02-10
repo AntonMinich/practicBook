@@ -24,3 +24,6 @@ console.log(sum);
 let number4 = 876543;
 let quantiNumber4 = String(number4).length;
 console.log(quantiNumber4);
+
+
+// Даны два числа. Проверьте, что первые цифры этих чисел совпадают.
