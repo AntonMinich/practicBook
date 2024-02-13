@@ -111,7 +111,6 @@ for (let elem of arrString) {
 // 
 string = 'Hello, world!';
 arrString = string.split('');
-arrString.forEach(elem => console.log(elem)
-);
+arrString.forEach(elem => console.log(elem));
 
 
