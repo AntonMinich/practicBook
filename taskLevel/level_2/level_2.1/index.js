@@ -55,3 +55,5 @@ let result = arr2.reduce(function (sum, elem, index, arr) {
 }, 0)
 console.log(result);
 
+
+
